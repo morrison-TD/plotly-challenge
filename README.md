@@ -3,19 +3,20 @@
 For this project, we analyzed and visuialized Belly Button Bacteria research data samples.
 
 
-###**Dashboard:**
+# Dashboard
+-----------------
 
 
 ![GitHub Logo](/Images/Fig1.png)
 
-###**Dropdown:**
+# Dropdown
 The dropdown feature allows for users to seemlessly browse the data set, it also allows for responsive selection.
 
 
 ![GitHub Logo](/Images/dropdown.png)
 
 
-###**Bubble Chart:**
+# Bubble Chart
 The bubble chart response to the dropdown selections.
 
 
@@ -23,7 +24,7 @@ The bubble chart response to the dropdown selections.
 
 
 
-###**Piechart:**
+# Piechart
 The pie chart also responses to the drop down selections.
 
 
