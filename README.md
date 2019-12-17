@@ -6,8 +6,8 @@ For this project, we analyzed and visuialized Belly Button Bacteria research dat
 # Dashboard
 -----------------
 
-
 ![Dashboard](/Images/bacteria_by_filterforgedotcom.png)
+
 
 # Dropdown
 The dropdown feature allows for users to seemlessly browse the data set, it also allows for responsive selection.
