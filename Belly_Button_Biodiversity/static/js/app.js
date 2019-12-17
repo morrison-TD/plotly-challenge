@@ -1,7 +1,6 @@
 // @TODO: Complete the following function that builds the metadata panel
  // Use d3.json to fetch the metadata for a sample
    // Use d3 to select the panel with id of #sample-metadata
-   // Use `.html("") to clear any existing metadata
    function buildMetadata(sample) {
     d3.json(`/metadata/${sample}`).then((data) => {
       var PANEL = d3.select("#sample-metadata");
@@ -19,26 +18,23 @@
    });
    
   }
-
-
-      // @TODO: Build a Pie Chart
   //start Pie chart
   
-  function buildCharts(sample) {
-    var BbData = `/samples/${sample}`;
-        // @TODO: Build a Pie Chart
-        d3.json(BbData).then(function(data){
-          var values = data.sample_values.slice(0,15);
-          var labels = data.otu_ids.slice(0,15);
-          var display = data.otu_labels.slice(0,15);
-          var pie_chart = [{
-            values: values,
-            lables: labels,
-            hovertext: display,
-            type: "pie"
-          }];
-          Plotly.newPlot('pie',pie_chart);
-        
+  // function buildCharts(sample) {
+  //   var BbData = `/samples/${sample}`;
+  //       // @TODO: Build a Pie Chart
+  //       d3.json(BbData).then(function(data){
+  
+  var pie_chart = [{
+    values : data.sample_values.slice(0,15),
+    labels : data.otu_ids.slice(0,15),
+    display : data.otu_labels.slice(0,15),
+    hovertext: hoverover,
+    type: "pie"
+  }];
+  Plotly.newPlot('pie',pie_chart);
+          
+      
     //end Pie chart
 
 
@@ -72,8 +68,7 @@
       };
       Plotly.newPlot("bubble", data, layout);
     });
-  });
-};
+
   //end bubble chart
    
 
